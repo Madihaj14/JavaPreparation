@@ -1,8 +1,8 @@
 
 import java.util.*;
 
-public class Conditionals {
-
+public class Code {
+//EX1 check if adult or not
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int age = sc.nextInt();
