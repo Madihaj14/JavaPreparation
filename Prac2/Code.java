@@ -19,5 +19,6 @@ public class Code {
                 System.out.println("a is lesser");
             }
         }
+        sc.close();
     }
 }
