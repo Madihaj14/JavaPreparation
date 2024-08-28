@@ -6,18 +6,33 @@ public class P4 {
         int n = 4;
 
         //outer loop
-        for (int i=1; i<=n; i++) {
+       // for(int i=1; i<=n; i++) {
             //inner loop --> Space print
-            for (int j=1; j<=n-1; j++){
-                System.out.print(" ");
-            }
-
+          //  for(int j=1; j<=n-1; j++){
+             //   System.out.print(" ");
+            //}
+            
             //inner loop --> Star print
-            for (int j=1; j<=i; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
+           // for(int j=1; j<=i; j++) {
+             //   System.out.print("*");
+           // }
+
+           // System.out.println();
+       // }
+
+        // alternate menthod
+        for(int i = 1; i<=n; i++){
+		    for(int j = 1; j<=n; j++){
+		        if(j<=n-i)
+		            System.out.print(" ");
+		        else
+		            System.out.print("*");
+		    }
+		    System.out.println();
         }
+    
+
+
     }
    
 }
