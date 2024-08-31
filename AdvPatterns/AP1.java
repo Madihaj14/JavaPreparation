@@ -3,7 +3,7 @@ package JavaPreparation.AdvPatterns;
 public class AP1 {
     public static void main(String[] args) {
         //butterfly pattern
-        int n = 5;
+        int n = 4;
 
         //upper half
         for (int i=1; i<=n; i++) {
