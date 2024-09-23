@@ -13,7 +13,7 @@ public class P7 {
                     System.out.print(number + " ");
                     number++; //number = number + 1
                 }
-                System.out.println();
+                
             }
     }
 }
