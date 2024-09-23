@@ -14,6 +14,8 @@ public class Func1 {
         String name = sc.next();
 
         printMyName(name);//call kiya function ko
+        sc.close ();
+
 
     }
     
