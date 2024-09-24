@@ -14,7 +14,7 @@ public class Func2  {
         int b = sc.nextInt();
 
         int sum = calculateSum(a, b);
-        System.out.println(sum);
+        System.out.println("Sum of two nos. is: " + sum);
         sc.close ();
 
 
