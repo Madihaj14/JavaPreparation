@@ -5,7 +5,7 @@ import java.util.Scanner;
 //Que: Make a fuction to multiply two numbers and return the product
 public class Func3  {
     public static int calculateProduct (int a, int b) {
-        return a* b;
+        return a * b;
     } 
     public static void main (String args[]) {
         Scanner sc = new Scanner(System.in);
