@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class 2DArrays {
+public class Arrays {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int rows = sc.nextInt();
@@ -25,5 +25,6 @@ public class 2DArrays {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
