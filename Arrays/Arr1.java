@@ -1,4 +1,4 @@
-package JavaPreparation.Arrays;
+package Arrays;
 import java.util.*;
 
 
