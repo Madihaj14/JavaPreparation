@@ -11,7 +11,7 @@ public class Code {
         } else {
             System.out.println("NotAdult");
         }
-        
+        sc.close();
 
 
     }
