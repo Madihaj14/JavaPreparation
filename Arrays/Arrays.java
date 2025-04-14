@@ -25,6 +25,6 @@ public class Arrays {
             }
             System.out.println();
         }
-        
+        sc.close();
     }
 }
