@@ -35,10 +35,3 @@ The repository is divided into multiple folders, each targeting a specific area 
 - Java interview theory notes
 
 ---
-
-## 🛠️ Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Madihaj14/JavaPreparation.git
-   cd JavaPreparation
