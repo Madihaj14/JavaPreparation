@@ -30,8 +30,4 @@ The repository is divided into multiple folders, each targeting a specific area 
 - HashMap & HashSet
 - Practice problems from LeetCode, GFG, etc.
 
-### 📘 Notes
-- Short notes and summaries for quick revision
-- Java interview theory notes
-
 ---
