@@ -22,7 +22,7 @@ The repository is divided into multiple folders, each targeting a specific area 
 - Abstract Classes
 - Method Overriding & Overloading
 
-### 🧠 DSA Problems in Java
+### 🧠 DSA with Java
 - Searching & Sorting
 - Recursion
 - Stack, Queue, Linked List
