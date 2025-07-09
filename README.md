@@ -4,7 +4,7 @@ Welcome to the **JavaPreparation** repository! This repo is a structured and evo
 
 ## 📚 Contents
 
-The repository is divided into multiple folders, each targeting a specific area of Java and DSA:
+The repository is divided into multiple parts, each targeting a specific area of Java and DSA:
 
 ### ✅ Core Java
 - Basics of Java
