@@ -22,7 +22,7 @@ The repository is divided into multiple parts, each targeting a specific area of
 - Abstract Classes
 - Method Overriding & Overloading
 
-### 🧠 DSA with Java
+### 🧠 DSA Question Solving with Java
 - Searching & Sorting
 - Recursion
 - Stack, Queue, Linked List
