@@ -4,7 +4,7 @@ Welcome to the **JavaPreparation** repository! This repo is a structured and evo
 
 ## 📚 Contents
 
-The repository is divided into multiple folders, each targeting a specific area of Java and DSA:
+The repository is divided into multiple parts, each targeting a specific area of Java and DSA:
 
 ### ✅ Core Java
 - Basics of Java
@@ -22,7 +22,7 @@ The repository is divided into multiple folders, each targeting a specific area 
 - Abstract Classes
 - Method Overriding & Overloading
 
-### 🧠 DSA Problems in Java
+### 🧠 DSA Question Solving with Java
 - Searching & Sorting
 - Recursion
 - Stack, Queue, Linked List
