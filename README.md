@@ -1,4 +1,4 @@
-# JavaPreparation 🚀
+# Java Preparation 🚀
 
 Welcome to the **JavaPreparation** repository! This repo is a structured and evolving collection of Java programs, notes, and problem-solving exercises. It is designed to assist in mastering **Java Programming**, **Object-Oriented Concepts**, and **DSA (Data Structures & Algorithms)** — especially useful for interview and placement preparation.
 
