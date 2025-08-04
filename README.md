@@ -1,4 +1,4 @@
-# JavaPreparation 🚀
+# Java Preparation 🚀
 
 Welcome to the **JavaPreparation** repository! This repo is a structured and evolving collection of Java programs, notes, and problem-solving exercises. It is designed to assist in mastering **Java Programming**, **Object-Oriented Concepts**, and **DSA (Data Structures & Algorithms)** — especially useful for interview and placement preparation.
 
@@ -22,7 +22,7 @@ The repository is divided into multiple parts, each targeting a specific area of
 - Abstract Classes
 - Method Overriding & Overloading
 
-### 🧠 DSA Question Solving with Java
+### 🧠 DSA Questions with Java
 - Searching & Sorting
 - Recursion
 - Stack, Queue, Linked List
