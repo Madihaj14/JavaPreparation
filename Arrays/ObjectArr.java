@@ -37,6 +37,13 @@ public class ObjectArr {
             System.out.println(students[i].rollno + ". " + students[i].name + " : " + students[i].marks);
         }
 
+        System.out.println("-----------"); //adding space between the 2 outputs
+        
+        //print the details of each student using an enhanced for loop
+        for (Student stud : students) 
+        {
+            System.out.println(stud.rollno + ". " + stud.name + " : " + stud.marks);
+        }
         
     }
 }
