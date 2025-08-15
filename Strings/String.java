@@ -1,6 +1,5 @@
 public class String {
     
-    //All about strings
     public static void main(String[] args) {
         // Create a string
         String str = "Hello, World!";
