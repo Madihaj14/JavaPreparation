@@ -1,7 +1,7 @@
 public class String {
 
     public static void main(String[] args) {
-        // How to create a string
+        // Create a string
         String str = "Hello, World!";
         
         // Print the original string
