@@ -2,7 +2,7 @@ public class String {
 
     public static void main(String[] args) {
         // Create a string (it is a class and not a data type that is why we write it in capital letters)
-        String str = "Hello, World!";
+        String str = new String ("Hello, World!");
         
         // Print the original string
         System.out.println("Original String: " + str);
