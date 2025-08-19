@@ -1,14 +1,18 @@
-public class String {
+public class StringNotes {
 
     public static void main(String[] args) {
 
         //usual way to create a string
         String name = "Madiha";
+        System.out.println(name);
 
         // another way to create a string (it is a class and not a data type that is why we write it in capital letters)
         String str = new String ("Hello, World!");
         
         // Print the original string
+        System.out.println(str);
+        
+        // Print the original string (concatenation)
         System.out.println("Original String: " + str);
         
         // Convert to uppercase
