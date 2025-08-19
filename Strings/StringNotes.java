@@ -12,7 +12,7 @@ public class StringNotes {
         // Print the original string
         System.out.println(str);
         
-        // Print the original string (concatenation)
+        // concatenation
         System.out.println("Original String: " + str);
         
         // Convert to uppercase
