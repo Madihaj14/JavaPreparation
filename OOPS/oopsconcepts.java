@@ -327,6 +327,28 @@ class Chicken extends Animal {
     }
 }
 
+//getters and setters can be used to access private variables in the abstract class
+//example of getters and setters in the abstract class is below
+class Human extends Animal {
+    private String name;
+
+    Human(String name) {
+        this.name = name;
+    }
+
+    void walk() {
+        System.out.println("Human walks on 2 legs");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
 /*
 public class OOPS {
     public static void main(String args[]) {
