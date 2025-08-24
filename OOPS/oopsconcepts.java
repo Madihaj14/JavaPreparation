@@ -328,7 +328,7 @@ class Chicken extends Animal {
 }
 
 //getters and setters can be used to access private variables in the abstract class
-//example showing the use of getters and setters in abstract class
+//example showing the use of getters and setters in an abstract class
 class Human extends Animal {
     private String name;
     private int age;
