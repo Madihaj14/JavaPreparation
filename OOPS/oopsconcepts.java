@@ -84,7 +84,7 @@ Note: When an object is created using the new keyword, space is allocated for th
 - Refer to the current class instance variable
 */
 
-// 2. CONSTRUCTOR
+// 2. CONSTRUCTORS
 
 /*
 Constructor:
