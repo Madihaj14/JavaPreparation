@@ -94,8 +94,8 @@ Used to initialize the data members of new objects.
 - Constructors don’t have a return type (not even void).
 - Constructors are only called once, at object creation.
 Types:
-1. Non-Parameterized constructor
-2. Parameterized constructor
+1. Non-Parameterized constructors
+2. Parameterized constructors
 3. Copy Constructor
 */
 
