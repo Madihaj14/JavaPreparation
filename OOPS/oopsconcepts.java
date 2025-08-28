@@ -96,10 +96,10 @@ Used to initialize the data members of new objects.
 Types:
 1. Non-Parameterized constructors
 2. Parameterized constructors
-3. Copy Constructor
+3. Copy Constructors
 */
 
-// Non-Parameterized Constructor Example
+// Non-Parameterized Constructors Example
 class Student1 {
     String name;
     int age;
@@ -109,7 +109,7 @@ class Student1 {
     }
 }
 
-// Parameterized Constructor Example
+// Parameterized Constructors Example
 class Student2 {
     String name;
     int age;
@@ -120,7 +120,7 @@ class Student2 {
     }
 }
 
-// Copy Constructor Example
+// Copy Constructors Example
 class Student3 {
     String name;
     int age;
@@ -327,8 +327,9 @@ class Chicken extends Animal {
     }
 }
 
-//getters and setters can be used to access private variables in the abstract class
-//example showing the use of getters and setters in an abstract class
+/*getters and setters can be used to access private variables in the abstract class
+example showing the use of getters and setters in an abstract class*/
+
 class Human extends Animal {
     private String name;
     private int age;
