@@ -1,8 +1,10 @@
 
 import java.util.*;
 
+//WAP to take age as input and print whether a person is adult or not. (18+ is adult)
+
 public class Code {
-//EX1 check if adult or not
+    
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int age = sc.nextInt();
