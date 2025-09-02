@@ -136,6 +136,21 @@ class Student3 {
 Note: Unlike C++, Java has no Destructor. Instead, Java has an efficient garbage collector that deallocates memory automatically.
 */
 
+//Super Keyword: Refers to the immediate parent class object.
+// It is used to access parent class variables and methods.
+// It can also be used to invoke parent class constructor.
+class Parent {
+    Parent() {
+        System.out.println("Parent Constructor");
+    }
+}
+class Child extends Parent {
+    Child() {
+        super(); // Invoking parent class constructor
+        System.out.println("Child Constructor");
+    }
+}
+
 // 3. POLYMORPHISM
 
 /*
