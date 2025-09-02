@@ -93,7 +93,7 @@ Used to initialize the data members of new objects. (A constructors looks like a
 Characteristics:
 - Constructors have the same name as the class.
 - Constructors don’t have a return type (not even void).
-- Constructors are only called once, at object creation.
+- Constructors are only called once, at object creation. So everytime an object is created, a constructor is called.
 Types:
 1. Non-Parameterized constructors
 2. Parameterized constructors
