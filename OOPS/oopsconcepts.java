@@ -105,7 +105,7 @@ class Student1 {
     String name;
     int age;
 
-    Student1() {
+    public Student1() {
         System.out.println("Constructor called");
     }
 }
