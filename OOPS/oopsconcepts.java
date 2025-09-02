@@ -89,7 +89,8 @@ Note: When an object is created using the new keyword, space is allocated for th
 /*
 Constructor:
 A special method invoked automatically at the time of object creation.
-Used to initialize the data members of new objects.
+Used to initialize the data members of new objects. (A constructors looks like a method but it has no return type)
+Characteristics:
 - Constructors have the same name as the class.
 - Constructors don’t have a return type (not even void).
 - Constructors are only called once, at object creation.
