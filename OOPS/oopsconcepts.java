@@ -21,6 +21,22 @@ An object can represent a person, place, or any item.
 An object can operate on both data members and member functions.
 */
 
+/*
+Naming Convention for java programming:
+1. Class name should start with an uppercase letter.
+2. If multiple words are used to name a class, then each new word should start with an uppercase letter (CamelCase).
+3. Class name should be relevant to the functionality of the class.
+4. No special characters or spaces should be used in the class name.
+5. class and interface names should start with an uppercase letter.
+6. variable and method names should start with a lowercase letter.
+7. constant names should be in uppercase letters.
+8. keywords should not be used as class names.
+9. Class names, method names, and variable names cannot be the same as Java reserved keywords.
+10. keywords are case sensitive.
+11. CamelCase notation should be used for class names and method names.
+12. A constructor name should be the same as the class name.
+ */
+
 // Example 1: Class and Object
 class Student {
     String name;
@@ -250,6 +266,12 @@ class Triangle3 extends Shape3 {
 class EquilateralTriangle extends Triangle3 {
     int side;
 }
+
+/* 
+Every class in Java is by default a subclass of Object class. 
+That means Object class is the parent class of all the classes in Java.
+So, Object class is the super class of all the classes in Java.
+*/
 
 /*
 Hybrid inheritance is a combination of simple, multiple inheritance and hierarchical inheritance.
