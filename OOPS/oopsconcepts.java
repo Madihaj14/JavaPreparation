@@ -100,6 +100,10 @@ Note: When an object is created using the new keyword, space is allocated for th
 - Refer to the current class instance variable
 */
 
+/*Anonymous Object: If an object is not assigned to a reference variable, it is known as an anonymous object.
+Example: new Student().getInfo();
+ */
+
 // 2. CONSTRUCTORS
 
 /*
@@ -155,6 +159,7 @@ Note: Unlike C++, Java has no Destructor. Instead, Java has an efficient garbage
 //Super Keyword: Refers to the immediate parent class object.
 // It is used to access parent class variables and methods.
 // It can also be used to invoke parent class constructor.
+
 class Parent {
     Parent() {
         System.out.println("Parent Constructor");
@@ -216,6 +221,7 @@ class Circle extends Shape {
 
 /*
 Inheritance: A process in which one object acquires all the properties and behaviors of its parent object automatically.
+Why it is used? To reduce redudndancy in your code.
 Types:
 1. Single Inheritance
 2. Hierarchical Inheritance
@@ -224,12 +230,12 @@ Types:
 */
 
 // Single Inheritance Example
-class Shape1 {
+class Shape1 {    //parent class
     public void area() {
         System.out.println("Displays Area of Shape");
     }
 }
-class Triangle1 extends Shape1 {
+class Triangle1 extends Shape1 {     //child class
     public void area(int h, int b) {
         System.out.println((1/2.0)*b*h);
     }
@@ -282,6 +288,8 @@ Hybrid inheritance is a combination of simple, multiple inheritance and hierarch
 /*
 Package: A group of similar types of classes, interfaces, and sub-packages.
 Built-in packages: java, util, io, etc.
+User-defined packages: Can be created by the user.
+To use a package in your program, you need to import it using the import keyword.
 
 import java.util.Scanner;
 import java.io.IOException;
