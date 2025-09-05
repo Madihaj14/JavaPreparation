@@ -318,6 +318,17 @@ Private: Access only within the class.
 Default: Access only within the package.
 Protected: Access within the package and outside the package through child class.
 Public: Access everywhere.
+
+You cannot have 2 public classes in a single file.
+Try to keep your class public, so that it can be accessed from anywhere.
+If a class is not declared public, it is accessible only within the package.
+Try to keep instance variables private, so that they cannot be accessed directly from outside the class.
+If an instance variable is not declared private, it can be accessed directly from outside the class.
+If a class is declared public, the file name should be the same as the class name.
+If a class is not declared public, the file name can be different from the class name.
+Try to avoid using default access modifier, as it can be accessed only within the package.
+If a class is declared protected, it can be accessed only within the package and outside the package through child class.
+
 */
 
 // Example of Access Modifiers
