@@ -14,11 +14,13 @@ A user-defined data type which defines its properties and functions.
 Class is the only logical representation of the data.
 Example: Human being is a class. The body parts are its properties, and the actions performed are functions.
 The class does not occupy memory space until an object is instantiated.
+Any class we use in java belongs to a package. 
 
 Object:
 A run-time entity. It is an instance of the class.
 An object can represent a person, place, or any item.
 An object can operate on both data members and member functions.
+
 */
 
 /*
@@ -295,6 +297,18 @@ For Example:
     - import java.util.*; // imports all the classes from the util package
     - import java.util.Scanner; // imports only the Scanner class from the util package
     - import java.io.IOException; // imports only the IOException class from the io package
+
+Any class we use in java belongs to a package. 
+    - If we do not import any package, then the class belongs to the default package.
+    - The default package contains classes that are automatically imported by the Java compiler.
+    - The default package is also known as the unnamed package.
+    - It is not a good practice to use the default package in your program.
+    - It is better to create your own package and use it in your program.
+To create a user-defined package, use the package keyword at the top of your Java source file.
+For Example:
+    - package mypackage; // creates a package named mypackage
+    - package com.apnacollege; // creates a package named com.apnacollege
+By default, every java file has some package imported in it, like java.lang package.
 */
 
 // 6. ACCESS MODIFIERS
