@@ -291,8 +291,10 @@ Built-in packages: java, util, io, etc.
 User-defined packages: Can be created by the user.
 To use a package in your program, you need to import it using the import keyword.
 
-import java.util.Scanner;
-import java.io.IOException;
+For Example:
+    - import java.util.*; // imports all the classes from the util package
+    - import java.util.Scanner; // imports only the Scanner class from the util package
+    - import java.io.IOException; // imports only the IOException class from the io package
 */
 
 // 6. ACCESS MODIFIERS
