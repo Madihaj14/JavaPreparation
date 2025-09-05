@@ -178,9 +178,16 @@ class Child extends Parent {
 
 /*
 Polymorphism: The ability to present the same interface for differing underlying forms (data types).
+Poly - Many
+Morphism - Behaviour
 Types:
 1. Compile Time Polymorphism (Static) - Method Overloading
+    When a class has multiple methods with the same name but different parameters (different type or number of parameters).
+    That is, when the behavior of a method is determined at compile time, it is known as compile time polymorphism.
+
 2. Runtime Polymorphism (Dynamic) - Method Overriding
+    When a subclass has a method with the same name and same parameters as a method in its superclass.
+    That is, when the behavior of a method is determined at runtime, it is known as runtime polymorphism.
 */
 
 // Method Overloading Example
@@ -218,6 +225,44 @@ class Circle extends Shape {
         System.out.println((3.14)*r*r);
     }
 }
+
+//Dynamic Method Dispatch Example
+class Shape4 {
+    public void area() {
+        System.out.println("Displays Area of Shape");
+    }
+}
+class Triangle4 extends Shape4 {
+    public void area() {
+        System.out.println("Area of Triangle");
+    }
+}
+class Circle4 extends Shape4 {
+    public void area() {
+        System.out.println("Area of Circle");
+    }
+}
+/*
+public class OOPS {     
+    public static void main(String args[]) {
+        Shape4 s;
+        s = new Triangle4(); // Upcasting
+        s.area();
+
+        s = new Circle4(); // Upcasting
+        s.area();
+    }
+}
+*/ 
+
+/* 
+Final Keyword: Used to restrict the user.The final keyword can be used with variables, methods, and classes.
+Examples:
+1. Final Variable: A variable declared with the final keyword is a constant variable, and its value cannot be changed once initialized. (Basically, making a variable constant)
+2. Final Method: A method declared with the final keyword cannot be overridden by subclasses. (Basically, preventing/stopping method overriding)
+3. Final Class: A class declared with the final keyword cannot be subclassed. (Basically, preventing/stopping inheritance)
+
+*/
 
 // 4. INHERITANCE
 
