@@ -242,7 +242,9 @@ class Circle4 extends Shape4 {
         System.out.println("Area of Circle");
     }
 }
-/*
+
+/* Dynamic Method Dispatch: The process in which a call to an overridden method is resolved at runtime rather than compile-time.
+It is also known as runtime polymorphism.
 public class OOPS {     
     public static void main(String args[]) {
         Shape4 s;
@@ -253,7 +255,7 @@ public class OOPS {
         s.area();
     }
 }
-*/ 
+/*
 
 /* 
 Final Keyword: Used to restrict the user.The final keyword can be used with variables, methods, and classes.
@@ -545,4 +547,28 @@ public class OOPS {
     }
 }
 */
+
+/*
+ Object class equals to string hashcode() method
+    public class OOPS {
+        public static void main(String args[]) {
+            String s1 = new String("Hello");
+            String s2 = new String("Hello");
+    
+            System.out.println(s1.equals(s2)); // true
+            System.out.println(s1 == s2); // false
+    
+            System.out.println(s1.hashCode()); // same hashcode
+            System.out.println(s2.hashCode()); // same hashcode
+    
+            System.out.println(System.identityHashCode(s1)); // different hashcode
+            System.out.println(System.identityHashCode(s2)); // different hashcode
+        }
+
+        
+ */
+
+
+
+
 }
