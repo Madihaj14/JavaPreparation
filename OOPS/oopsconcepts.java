@@ -549,7 +549,26 @@ public class OOPS {
 */
 
 /*
- Object class equals to string hashcode() method
+ Type Casting: Converting a variable of one data type to another data type. 
+There are 2 types of type casting:
+1. Widening (Implicit) Type Casting: Converting a variable of a smaller data type to a larger data type.
+Example: int to float, char to int, etc.
+2. Narrowing (Explicit) Type Casting: Converting a variable of a larger data type to a smaller data type.
+Example: float to int, int to char, etc.
+Example of Type Casting 
+public class OOPS {
+    public static void main(String args[]) {
+        // Widening Type Casting
+        int a = 10;
+        float b = a; // int to float
+        System.out.println(b);
+
+        // Narrowing Type Casting
+        float x = 10.5f;
+        int y = (int)x; // float to int
+        System.out.println(y);
+    }
+
  */
 
 
