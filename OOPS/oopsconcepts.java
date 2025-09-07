@@ -569,6 +569,49 @@ public class OOPS {
         System.out.println(y);
     }
 
+
+//UPCASTING AND DOWNCASTING
+It is related to Inheritance and Polymorphism. It is used to achieve Runtime Polymorphism.
+It is basically used to refer to the parent class object by the child class reference variable and vice-versa.
+
+For Example:
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+public class OOPS {
+    public static void main(String args[]) {
+        Animal a;
+        Dog d = new Dog();
+        Cat c = new Cat();
+
+        // Upcasting
+        a = d;
+        a.sound(); // Dog barks
+
+        a = c;
+        a.sound(); // Cat meows
+
+        // Downcasting
+        Animal a2 = new Dog();
+        Dog d2 = (Dog) a2;
+        d2.sound(); // Dog barks
+    }
+
  */
 
 
