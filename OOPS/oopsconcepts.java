@@ -574,7 +574,7 @@ public class OOPS {
 It is related to Inheritance and Polymorphism. It is used to achieve Runtime Polymorphism.
 It is basically used to refer to the parent class object by the child class reference variable and vice-versa.
 
-For Example:
+Example:
 class Animal {
     void sound() {
         System.out.println("Animal makes a sound");
