@@ -1,5 +1,7 @@
 public class oopsconcepts {
-    /*
+
+
+/*
 OBJECT ORIENTED PROGRAMMING SYSTEMS (OOPS) - JAVA
 
 Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects.
@@ -414,8 +416,18 @@ Thus, encapsulation makes the concept of data hiding possible.
 /*
 Abstraction: Hiding the unnecessary details & showing only the essential parts/functionalities to the user.
 Achieved in 2 ways:
-1. Abstract class
-2. Interfaces (Pure Abstraction)
+1. Abstract class: Can have both abstract and non-abstract methods. You cannot create an object of an abstract class.
+- Abstract methods are declared without an implementation.
+- If a class has at least one abstract method, then the class must be declared abstract.
+- A subclass of an abstract class must implement all the abstract methods of the parent class, or else it must be declared abstract.
+- An abstract class can have constructors and static methods also. 
+
+2. Interfaces (Pure Abstraction): Can have only abstract methods (until Java 7). From Java 8 onwards, it can have default and static methods also.
+- All the methods in an interface are implicitly abstract and public.
+- A class can implement multiple interfaces, but it can extend only one class.
+- An interface cannot have instance variables. The variables in an interface are implicitly public, static, and final. 
+- You cannot create an object of an interface.
+
 */
 
 // Abstract Class Example
@@ -614,6 +626,38 @@ public class OOPS {
 
  */
 
+ 
+
+ /*WRAPPER CLASSES
+Wrapper classes are used to convert primitive data types into objects.
+For Example: int to Integer, char to Character, etc.
+Autoboxing: Converting a primitive data type to a wrapper class object automatically.
+Unboxing: Converting a wrapper class object to a primitive data type automatically.
+parseInt: It is a feature by wrapper class where string to int conversion is done.
+public class OOPS {
+    public static void main(String args[]) {
+        // Autoboxing
+        int a = 10;
+        Integer i = a; // int to Integer
+        System.out.println(i);
+
+        // Unboxing
+        Integer j = new Integer(20);
+        int b = j; // Integer to int
+        System.out.println(b);
+
+        // parseInt
+        String s = "30";
+        int c = Integer.parseInt(s); // String to int
+        System.out.println(c);
+    }
+}
+
+*/
+
+/* 
+Abstract Methods
+ */
 
 
 
