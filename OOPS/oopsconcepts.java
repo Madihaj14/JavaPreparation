@@ -430,6 +430,12 @@ Achieved in 2 ways:
 
 */
 
+/*class --> class --> extends
+interface --> interface --> extends
+class --> interface --> implements
+interface --> class --> Not possible
+*/
+
 /*
 Note: An abstract class can have instance variables and concrete methods, but an interface cannot have instance variables and can have only abstract methods (until Java 7).
 Inner Class: A class defined within another class.
@@ -440,6 +446,15 @@ Types of Inner Class:
 4. Anonymous Inner Class: A class without a name, defined and instantiated in a single statement.
 
  */
+
+//Interface vs Abstract Class
+/*
+- An interface can only have abstract methods (until Java 7).
+- An abstract class can have both abstract and concrete methods.
+- A class can implement multiple interfaces, but it can extend only one abstract class.
+- An interface cannot have instance variables, while an abstract class can have instance variables.
+- An interface is a contract that a class must follow, while an abstract class can provide some default behavior.
+*/
 
 // Abstract Class Example
 abstract class Animal {
@@ -467,6 +482,45 @@ class Chicken extends Animal {
     }
     void walk() {
         System.out.println("Chicken walks on 2 legs");
+    }
+}
+
+//Interfaces Example
+abstract class Computer //interface can also be used here (interface Computer)
+{
+    public abstract void code();
+}
+class Laptop extends Computer //interface can also be used here (implements Computer)
+{
+
+    public void code() 
+    {
+        System.out.println("code, compile and run");
+    }
+}
+class Desktop extends Computer //interface can also be used here (implements Computer)
+{
+    public void code() 
+    {
+        System.out.println("code, compile and run: faster");
+    }
+}
+class Developer 
+{
+    public void develop(Computer lap) 
+    {
+        lap.code();
+    }
+}
+public class OOPS
+{
+    public static void main(String args[]) 
+    {
+        Computer lap = new Laptop();
+        Computer desk = new Desktop();
+        Developer madiha = new Developer(); //interface can also be used here (Developer madiha = new Developer();)
+        madiha.develop(lap);
+        madiha.develop(desk);
     }
 }
 
@@ -667,10 +721,6 @@ public class OOPS {
 }
 
 */
-
-/* 
-Abstract Methods
- */
 
 
 
