@@ -430,6 +430,17 @@ Achieved in 2 ways:
 
 */
 
+/*
+Note: An abstract class can have instance variables and concrete methods, but an interface cannot have instance variables and can have only abstract methods (until Java 7).
+Inner Class: A class defined within another class.
+Types of Inner Class:
+1. Non-static Inner Class (Instance Inner Class): Can access all the members of the outer class, including private members.
+2. Static Inner Class (Static Nested Class): Can access only static members of the outer class.
+3. Local Inner Class: Defined within a method of the outer class. Can access all the members of the outer class, including private members.
+4. Anonymous Inner Class: A class without a name, defined and instantiated in a single statement.
+
+ */
+
 // Abstract Class Example
 abstract class Animal {
     abstract void walk();
@@ -528,16 +539,7 @@ public class OOPS {
 }
 */
 
-/*
-Note: An abstract class can have instance variables and concrete methods, but an interface cannot have instance variables and can have only abstract methods (until Java 7).
-Inner Class: A class defined within another class.
-Types of Inner Class:
-1. Non-static Inner Class (Instance Inner Class): Can access all the members of the outer class, including private members.
-2. Static Inner Class (Static Nested Class): Can access only static members of the outer class.
-3. Local Inner Class: Defined within a method of the outer class. Can access all the members of the outer class, including private members.
-4. Anonymous Inner Class: A class without a name, defined and instantiated in a single statement.
 
- */
 
 // 9. STATIC KEYWORD
 
