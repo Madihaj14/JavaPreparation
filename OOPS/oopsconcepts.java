@@ -584,14 +584,14 @@ class Chicken2 implements Animal2 {
     }
 }
 
-/*
+
 public class OOPS {
     public static void main(String args[]) {
         Horse2 horse = new Horse2();
         horse.walk();
     }
 }
-*/
+////////////////////////////////////////////////
 
 
 
@@ -628,7 +628,7 @@ public class OOPS {
 */
 
 /*
- Type Casting: Converting a variable of one data type to another data type. 
+Type Casting: Converting a variable of one data type to another data type. 
 There are 2 types of type casting:
 1. Widening (Implicit) Type Casting: Converting a variable of a smaller data type to a larger data type.
 Example: int to float, char to int, etc.
