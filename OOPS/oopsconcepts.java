@@ -584,14 +584,14 @@ class Chicken2 implements Animal2 {
     }
 }
 
-
+/* 
 public class OOPS {
     public static void main(String args[]) {
         Horse2 horse = new Horse2();
         horse.walk();
     }
 }
-////////////////////////////////////////////////
+*/
 
 
 
@@ -722,6 +722,12 @@ public class OOPS {
 
 */
 
+/*
+ Enumeration (enum) is a special data type that enables for a variable to be a set of predefined constants.
+The variable must be equal to one of the values that have been predefined for it.
 
+Exception Handling:
+
+ */
 
 }
