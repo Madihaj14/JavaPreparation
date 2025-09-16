@@ -735,7 +735,7 @@ public class OOPS {
 */
 
 /*
- Enumeration (enum) is a special data type that enables for a variable to be a set of predefined constants.
+Enumeration (enum) is a special data type that enables for a variable to be a set of predefined constants.
 The variable must be equal to one of the values that have been predefined for it.
 Usually if-else and switch-case iis used with enums but we prefer switch-case as they look better in case of enums.
 Enums are used when we know all possible values at compile time, such as choices on a menu, rounding modes, command line flags, etc.
