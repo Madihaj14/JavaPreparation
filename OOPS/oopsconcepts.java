@@ -427,6 +427,18 @@ Achieved in 2 ways:
 - A class can implement multiple interfaces, but it can extend only one class.
 - An interface cannot have instance variables. The variables in an interface are implicitly public, static, and final. 
 - You cannot create an object of an interface.
+Types of Interface:
+1. Normal Interface: An interface that contains only abstract methods.
+2. Marker Interface: An interface that contains no methods. It is used to mark a class for a specific purpose.
+3. Functional Interface: An interface that contains only one abstract method. It can have multiple default and static methods. It is used in lambda expressions.
+- From Java 8 onwards, interfaces can have default and static methods.
+- Default methods are declared using the default keyword and have a body.
+- Static methods are declared using the static keyword and have a body.
+- A class that implements an interface must implement all the abstract methods of the interface, or else it must be declared abstract.
+- An interface can extend another interface, but a class cannot extend an interface.
+- An interface can extend multiple interfaces.
+- A class can implement multiple interfaces.
+- An abstract class can implement an interface, but an interface cannot implement a class.
 
 */
 
@@ -768,8 +780,22 @@ public class OOPS {
 
 
 /*
-Exception Handling:
+Annotations: A form of metadata that provides data about a program but is not part of the program itself.
+Annotations have no direct effect on the operation of the code they annotate.
+They can be used to provide information to the compiler, to generate code, or to provide runtime processing.
+For Example:
+@interface MyAnnotation {
+    String value();
+    int number() default 0;
+}
+public class OOPS {
+    @MyAnnotation(value = "Hello", number = 5)
+    public void myMethod() {
+        System.out.println("This is my method");
+    }
+}
 
 */
+
 
 }
