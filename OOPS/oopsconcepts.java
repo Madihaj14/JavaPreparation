@@ -725,9 +725,51 @@ public class OOPS {
 /*
  Enumeration (enum) is a special data type that enables for a variable to be a set of predefined constants.
 The variable must be equal to one of the values that have been predefined for it.
+Usually if-else and switch-case iis used with enums but we prefer switch-case as they look better in case of enums.
+Enums are used when we know all possible values at compile time, such as choices on a menu, rounding modes, command line flags, etc.
+Enums are defined using the enum keyword.
+Enums can have constructors, methods, and variables.
+By default, enums are static and final.
+*/
+//For Example:
+public class OOPS {
+    enum Day {
+        SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+    }
 
+    public static void main(String args[]) {
+        Day day = Day.WEDNESDAY;
+
+        switch (day) {
+            case SUNDAY:
+                System.out.println("It's Sunday!");
+                break;
+            case MONDAY:
+                System.out.println("It's Monday!");
+                break;
+            case TUESDAY:
+                System.out.println("It's Tuesday!");
+                break;
+            case WEDNESDAY:
+                System.out.println("It's Wednesday!");
+                break;
+            case THURSDAY:
+                System.out.println("It's Thursday!");
+                break;
+            case FRIDAY:
+                System.out.println("It's Friday!");
+                break;
+            case SATURDAY:
+                System.out.println("It's Saturday!");
+                break;
+        }
+    }
+}
+
+
+/*
 Exception Handling:
 
- */
+*/
 
 }
