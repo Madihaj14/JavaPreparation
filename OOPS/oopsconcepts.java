@@ -796,6 +796,35 @@ public class OOPS {
 }
 
 */
+/*
+Lambda Expressions: A feature introduced in Java 8 that allows you to write functional-style code.
+They provide a clear and concise way to represent a single method interface using an expression.
+Description: It is used to implement a method defined by a functional interface.
+A functional interface is an interface that contains only one abstract method.
+They are used primarily to define inline implementations of functional interfaces, i.e., interfaces with a single abstract method.
+They are often used to simplify the syntax of anonymous inner classes.
 
+Example of Lambda Expression:
+public class OOPS {
+    public static void main(String args[]) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+        // Using Lambda Expression
+        Consumer<Integer> method = (n) -> System.out.println(n);
+        numbers.forEach(method);
+    }
+
+- Lambda expressions can be used to replace anonymous inner classes.
+- They can be used to implement functional interfaces.
+- They can be used to pass behavior as a parameter to a method.
+- They can be used to create more readable and maintainable code.
+- They can be used to write more concise code.
+- They can be used to improve performance by reducing the overhead of anonymous inner classes.
+- They can be used to enable functional programming in Java.
+- They can be used with collections to perform operations like filtering, mapping, and reducing.
+- They can be used with streams to perform operations on sequences of elements.
+- They can be used with the new Date and Time API in Java 8.
+- Lambda Expressions with return type is also possible.
+ */
 
 }
