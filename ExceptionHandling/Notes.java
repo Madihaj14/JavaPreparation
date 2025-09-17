@@ -15,14 +15,22 @@ public class Notes {
      Exception handling is a mechanism to handle runtime errors, so that the normal flow of the application can be maintained.
      In Java, we have five keywords to handle exceptions:
      1. try: The code that might throw an exception is placed inside the try block.
-     2. catch: The catch block is used to handle the exception. It must be preceded by a try block.
+     2. catch: The catch block is used to handle the exception. It must be preceded by a try block. It will only be executed if an exception occurs in the try block.
      3. finally: The finally block is used to execute important code such as closing connection, stream etc. It is executed whether an exception is handled or not.
      4. throw: The throw keyword is used to explicitly throw an exception.
-     5. throws: The throws keyword is used to declare exceptions that a method can throw.
+     5. throws: The throws keyword is used to declare exceptions that a method can throw. It is also called ducking the exception.
 
      Types of Exceptions:
      1. Checked Exceptions: These are exceptions that are checked at compile-time. Example: IOException, SQLException.
      2. Unchecked Exceptions: These are exceptions that are not checked at compile-time. Example: ArithmeticException, NullPointerException.
+
+     Exception Hierarchy:
+     - Throwable
+         - Error (Serious problems that a reasonable application should not try to catch)
+         - Exception
+             - Checked Exceptions (e.g., IOException, SQLException)
+             - Unchecked Exceptions (e.g., RuntimeException, ArithmeticException, NullPointerException)
+    
 
      Example of Exception Handling:
      try {
