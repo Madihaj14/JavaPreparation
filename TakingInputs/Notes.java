@@ -1,6 +1,8 @@
 public class Notes {
     // Taking Input in Java
     // 1. Using Scanner Class: The Scanner class is used to get user input in Java.
+    - Scanner scanner = new Scanner(System.in);
+    - scanner.close();
     /* Example:
     import java.util.Scanner;
          public class InputExample {
@@ -93,6 +95,6 @@ public class Notes {
     // Note: JOptionPane does not require closing as it is managed by the Swing framework.
     // JOptionPane.showInputDialog();
     // JOptionPane.showMessageDialog();
-    
+
 
 }
