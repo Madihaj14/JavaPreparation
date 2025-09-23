@@ -18,12 +18,5 @@ public class Notes {
      * as ArrayList, HashSet, and LinkedList.
      * Collections class provides methods that can be used with any type of object, as it uses
      * 
-     * 
-     * 
-     * 
      */
-
-
-
-
 }
