@@ -19,4 +19,33 @@ public class Notes {
      * Collections class provides methods that can be used with any type of object, as it uses
      * 
      */
+
+     //ARRAYLIST
+     /* 
+      * ArrayList is a resizable array implementation of the List interface.
+      * It allows duplicate elements and maintains the insertion order.
+        * ArrayList provides dynamic arrays that can grow as needed.
+        * It is part of the java.util package and implements the List interface.
+        * ArrayList is not synchronized, making it unsuitable for concurrent access.
+        * ArrayList allows random access to elements using an index.
+        * ArrayList provides methods for adding, removing, and accessing elements.
+        * ArrayList is more efficient for storing and accessing data compared to traditional arrays.
+        * ArrayList is commonly used in scenarios where dynamic resizing and frequent access to elements are required.
+        * ArrayList is a part of the Java Collections Framework, which provides a set of classes and interfaces for working with collections of objects.
+        * ArrayList is implemented as a resizable array, which means that it can grow or shrink in size as needed.
+        * ArrayList is not synchronized, which means that it is not thread-safe. If multiple
+        * threads access an ArrayList concurrently, and at least one of the threads modifies the list structurally, it must be synchronized externally.
+        * ArrayList provides methods for adding, removing, and accessing elements, as well as for
+        * iterating over the elements in the list.
+        * ArrayList is commonly used in scenarios where dynamic resizing and frequent access to elements are required,
+        * such as in applications that require a flexible data structure for storing and manipulating data.
+        * ArrayList is a part of the Java Collections Framework, which provides a set of classes and interfaces for working with collections of objects.
+        * ArrayList is implemented as a resizable array, which means that it can grow or shrink in size as needed.
+        * ArrayList is not synchronized, which means that it is not thread-safe. If multiple threads access an ArrayList concurrently, and at least one of the threads modifies the list structurally, it must be synchronized externally.
+        * ArrayList provides methods for adding, removing, and accessing elements, as well as for
+        * iterating over the elements in the list.
+        * ArrayList is commonly used in scenarios where dynamic resizing and frequent access to elements are required,
+        * such as in applications that require a flexible data structure for storing and manipulating data.
+        *
+        */
 }
