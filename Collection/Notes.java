@@ -220,4 +220,19 @@ public class Notes {
      * - Both provide constant-time performance for basic operations.
      * - Both use hashing for storage, unordered.
      */
+
+
+
+    /* 
+     * Sorting Method in Java Collections:
+     * - Collections.sort(List<T> list): Sorts the specified list into ascending order.
+     * - Uses TimSort algorithm (a hybrid of Merge Sort and Insertion Sort).
+     * - Time Complexity: O(n log n) on average.
+     * - Can also sort using a custom Comparator:
+     *  Collections.sort(List<T> list, Comparator<? super T> c)
+     * - Example:
+     *   Collections.sort(myList); // Natural order
+     *  Collections.sort(myList, myComparator); // Custom order
+     * 
+     */
 }
