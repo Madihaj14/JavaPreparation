@@ -235,4 +235,21 @@ public class Notes {
      *  Collections.sort(myList, myComparator); // Custom order
      * 
      */
+
+    /*
+     * Comparator vs Comparable in Java:
+     * - Comparable:
+     *  - Defines natural ordering of objects.
+     * - Implemented by the class whose objects need to be compared.
+     * - Method: compareTo(T o)
+     * - Example: String, Integer implement Comparable.
+     * - Comparator:
+     * - Defines custom ordering of objects.
+     * - Implemented in a separate class or as an anonymous class/lambda.
+     * - Method: compare(T o1, T o2)
+     * - Can be used to sort objects in different ways.
+     * - Example: Collections.sort(list, new MyComparator());
+     * - Use Comparable for default sorting, Comparator for custom sorting.
+     * 
+     */
 }
