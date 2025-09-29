@@ -250,6 +250,10 @@ public class Notes {
      * - Can be used to sort objects in different ways.
      * - Example: Collections.sort(list, new MyComparator());
      * - Use Comparable for default sorting, Comparator for custom sorting.
-     * 
      */
+
+    //For example:
+    
+
+
 }
