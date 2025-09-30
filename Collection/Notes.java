@@ -253,6 +253,47 @@ public class Notes {
      */
 
     //For example:
+    import java.util.ArrayList;
+    import java.util.Collections;
+    import java.util.Comparator;
+    class Person implements Comparable<Person> {
+        String name;
+        int age;
+
+        Person(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        @Override
+        public int compareTo(Person other) {
+            return this.name.compareTo(other.name); // Natural order by name
+        }
+
+        @Override
+        public String toString() {
+            return name + " (" + age + ")";
+        }
+    }
+    public static void main(String[] args) {
+        ArrayList<Person> people = new ArrayList<>();
+        people.add(new Person("Alice", 30));
+        people.add(new Person("Bob", 25));
+        people.add(new Person("Charlie", 35));
+
+        // Sort by natural order (name) using Comparable
+        Collections.sort(people);
+        System.out.println("Sorted by name (Comparable): " + people);
+
+        // Sort by age using Comparator
+        Collections.sort(people, new Comparator<Person>() {
+            @Override
+            public int compare(Person p1, Person p2) {
+                return Integer.compare(p1.age, p2.age); // Custom order by age
+            }
+        });
+        System.out.println("Sorted by age (Comparator): " + people);
+    }
     
 
 
