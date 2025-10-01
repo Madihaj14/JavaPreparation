@@ -236,6 +236,28 @@ public class Notes {
      * 
      */
 
+     //Example 
+    import java.util.ArrayList;
+    import java.util.Collections;
+    public class SortingExample {
+        public static void main(String[] args) {
+            ArrayList<Integer> list = new ArrayList<>();
+            list.add(5);
+            list.add(2);
+            list.add(8);
+            list.add(1);
+
+            // Sort in natural order
+            Collections.sort(list);
+            System.out.println("Sorted List: " + list);
+
+            // Sort in reverse order using Comparator
+            Collections.sort(list, Collections.reverseOrder());
+            System.out.println("Reverse Sorted List: " + list);
+        }
+    }
+    
+
     /*
      * Comparator vs Comparable in Java:
      * - Comparable:
