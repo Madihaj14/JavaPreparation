@@ -1,4 +1,4 @@
-public class Notes {
+public class notes {
     /*
     Errors and their types:
     1. Syntax Errors: These are errors in the code that violate the rules of the
