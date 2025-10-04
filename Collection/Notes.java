@@ -351,7 +351,7 @@ public class Notes {
       - Terminal: forEach, collect, reduce, count, anyMatch, allMatch, noneMatch, findFirst, findAny.
     -
     - Example:
-      result = people.stream()
+      result =people.stream()
             .filter(p -> p.age > 30)
             .map(p -> p.name)
             .forEach(System.out::println)
