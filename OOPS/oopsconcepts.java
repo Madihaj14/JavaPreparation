@@ -827,4 +827,81 @@ public class OOPS {
 - Lambda Expressions with return type is also possible.
  */
 
+
+//Final, sealed and non-sealed classes in Java
+//Final class is a class that cannot be inherited.
+//Sealed class is a class that can be inherited by a specific set of classes.
+//Non-sealed class is a class that can be inherited by any class.   
+//Example of Final, Sealed and Non-Sealed classes
+/*final class Parent {
+    void display() {
+        System.out.println("This is a final class");
+    }
+
+    //Sealed class
+    sealed class SealedClass permits SubClass1, SubClass2 {
+        void display() {
+            System.out.println("This is a sealed class");
+        }
+    }
+
+    //Non-sealed class
+    non-sealed class NonSealedClass {
+        void display() {
+            System.out.println("This is a non-sealed class");
+        }
+    }
+    
+    class SubClass1 extends SealedClass {
+        void display() {
+            System.out.println("This is a subclass of sealed class");
+        }
+    }
+    class SubClass2 extends SealedClass {
+        void display() {
+            System.out.println("This is another subclass of sealed class");
+        }
+    }
+    
+public class OOPS {
+    public static void main(String args[]) {
+        Parent p = new Parent();
+        p.display();
+
+        SealedClass sc = p.new SealedClass();
+        sc.display();
+
+        NonSealedClass nsc = p.new NonSealedClass();
+        nsc.display();
+
+        SubClass1 sub1 = p.new SubClass1();
+        sub1.display();
+
+        SubClass2 sub2 = p.new SubClass2();
+        sub2.display();
+    }
+    
+*/
+
+//Record Classes in Java
+//Record class is a special type of class that is used to store immutable data.
+//It is a concise way to create a class that contains only data.
+//Example of Record class
+public class OOPS {
+    record Student(String name, int age) {}
+
+    public static void main(String args[]) {
+        Student s1 = new Student("Aman", 24);
+        System.out.println("Name: " + s1.name());
+        System.out.println("Age: " + s1.age());
+    }
+
+
 }
+
+
+
+
+
+}
+
