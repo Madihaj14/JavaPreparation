@@ -317,6 +317,22 @@ public class Notes {
         System.out.println("Sorted by age (Comparator): " + people);
     }
     
+    //Example using functional operators
+    import java.util.ArrayList;
+    import java.util.Collections;
+    import java.util.Comparator;
+    public class ComparatorExample {
+        public static void main(String[] args) {
+            ArrayList<Person> people = new ArrayList<>();
+            people.add(new Person("Alice", 30));
+            people.add(new Person("Bob", 25));
+            people.add(new Person("Charlie", 35));
 
+            // Sort by age using Comparator with lambda expression
+            Collections.sort(people, (p1, p2) -> Integer.compare(p1.age, p2.age));
+            System.out.println("Sorted by age (Comparator with lambda): " + people);
+        }
+    }
+    
 
 }
