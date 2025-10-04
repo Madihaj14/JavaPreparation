@@ -333,6 +333,32 @@ public class Notes {
             System.out.println("Sorted by age (Comparator with lambda): " + people);
         }
     }
-    
+
+
+    //Stream API
+    /*
+    - Introduced in Java 8.
+    - Provides a functional approach to processing sequences of elements.
+    - Supports operations like filter, map, and reduce.
+    - Can be used with Collections, Arrays, and I/O channels.
+    - Supports parallel processing for performance improvement.
+    - Lazy evaluation: operations are not executed until a terminal operation is invoked.
+    - We can create streams from collections using the stream() method.
+    - We can use it only once, it cannot be reused.
+    - Reduces boilerplate code and improves readability.
+    - Reduce methods:
+      - Intermediate: filter, map, sorted, distinct, limit, skip
+      - Terminal: forEach, collect, reduce, count, anyMatch, allMatch, noneMatch, findFirst, findAny.
+    -
+    - Example:
+      result = people.stream()
+            .filter(p -> p.age > 30)
+            .map(p -> p.name)
+            .forEach(System.out::println)
+            .collect(Collectors.toList())
+            .reduce(0, (sum, p) -> sum + p.age, Integer::sum);
+    }
+
+    */
 
 }
