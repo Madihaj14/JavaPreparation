@@ -1,6 +1,11 @@
 package JavaPreparation.Patterns;
 
-//Problem: Print the following pattern for n=4 and m=5
+/*Problem: Print the following pattern for n=4 and m=5
+*****
+*   *
+*   *
+*****
+*/
 
 public class P2 {
     public static void main(String[] args) {
