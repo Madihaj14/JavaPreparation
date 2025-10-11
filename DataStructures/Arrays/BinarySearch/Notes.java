@@ -12,7 +12,7 @@ public class Notes {
 
      */
 
-    //Example code of Binary Search in Java
+    //Example code of Binary Search in Java using while loop
 
     public static int binarySearch(int[] arr, int target) {
         int low = 0;
@@ -30,6 +30,24 @@ public class Notes {
             }
         }
         return -1; // Return -1 if the target is not found
+    }
+
+    //Example code of Binary Search in Java using recursion
+    
+    public static int binarySearchRecursive(int[] arr, int target, int low, int high) {
+        if (low > high) {
+            return -1; // Base case: target not found
+        }
+
+        int mid = low + (high - low) / 2; // To avoid potential overflow
+
+        if (arr[mid] == target) {
+            return mid; // Return the index if the target is found
+        } else if (arr[mid] < target) {
+            return binarySearchRecursive(arr, target, mid + 1, high); // Search in the right half
+        } else {
+            return binarySearchRecursive(arr, target, low, mid - 1); // Search in the left half
+        }
     }
 
 
