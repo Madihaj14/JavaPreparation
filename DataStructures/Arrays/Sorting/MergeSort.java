@@ -1,7 +1,8 @@
 public class MergeSort {
 
     /*
-    M
+    Merge Sort
+
      */
     
 }
