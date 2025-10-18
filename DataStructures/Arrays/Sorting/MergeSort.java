@@ -11,7 +11,7 @@ public class MergeSort {
     In-Place: No (requires additional space for temporary arrays)
     */
 
-    //Code Implementation
+    //Code Implementation of Merge Sort 
     public static void mergeSort(int[] arr, int left, int right) {
         if (left < right) {
             // Find the middle point
