@@ -1,5 +1,4 @@
-public class Notes {
-    
+public class BinarySearch {    
 
     /*
     Binary Search

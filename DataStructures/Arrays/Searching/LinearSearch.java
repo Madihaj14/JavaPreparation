@@ -1,5 +1,6 @@
-public class Notes {
+public class LinearSearch {
     
+
 
     /*
     Linear Search
@@ -33,5 +34,5 @@ public class Notes {
             System.out.println("Element not found in the array.");
         }
     }
-    
+
 }
