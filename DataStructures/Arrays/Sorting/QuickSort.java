@@ -1,23 +1,23 @@
 public class QuickSort {
 
     /*
-     * QuickSort Algorithm Implementation
-     * Time Complexity: O(n log n) on average, O(n^2) in the worst case
-     * Space Complexity: O(log n) due to recursion stack
-     * Stable: No
-     * In-Place: Yes
-     * Not Adaptive
-     * Not Online
-     * Not Recursive (but can be implemented recursively)
-     * Not Comparison-Based (it is comparison-based)
-     * Not Non-Comparison-Based
-     * Not Internal
-     * Not External
-     * Not Parallel
-     * Not Distributed
-     * Not Cache-Efficient
-     * Not Memory-Efficient
-     * 
+     QuickSort Algorithm Implementation
+     Time Complexity: O(n log n) on average, O(n^2) in the worst case
+     Space Complexity: O(log n) due to recursion stack
+     Stable: No
+     In-Place: Yes
+     Not Adaptive
+     Not Online
+     Not Recursive (but can be implemented recursively)
+     Not Comparison-Based (it is comparison-based)
+     Not Non-Comparison-Based
+     Not Internal
+     Not External
+     Not Parallel
+     Not Distributed
+     Not Cache-Efficient
+     Not Memory-Efficient
+     Not I/O Efficient
      */
     
     // Function to perform QuickSort on the array
