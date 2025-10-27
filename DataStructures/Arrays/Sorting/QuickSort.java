@@ -2,6 +2,9 @@ public class QuickSort {
 
     /*
     QuickSort Algorithm Implementation:
+    It works on the concept of divide and conquer. The array is divided into sub-arrays based on a pivot element.
+    The elements are then sorted within these sub-arrays. 
+    Next, it works with the recursive sorting of the sub-arrays.
     Time Complexity: O(n log n) on average, O(n^2) in the worst case
     Space Complexity: O(log n) due to recursion stack
     Stable: No
