@@ -2,8 +2,13 @@ public class MergeSort {
 
     /*
     Merge Sort Algorithm:
-    1. Divide the unsorted array into n subarrays, each containing one element (a single element is considered sorted).
-    2. Repeatedly merge subarrays to produce new sorted subarrays until there is only one subarray remaining, which will be the sorted array.
+    1. Just like Insertion Sort, Merge Sort is a Divide and Conquer algorithm.
+    2. Divide the unsorted array into n subarrays, each containing one element (a single element is considered sorted).
+    3. Repeatedly merge subarrays to produce new sorted subarrays until there is only one subarray remaining, which will be the sorted array.
+    4. The merging process involves comparing the elements of the subarrays and arranging them in order.
+    5. Recursion is done twice, first to divide the array and second to merge the divided arrays.
+    6. Merge Sort is efficient for large datasets and is often used in external sorting algorithms.
+    7. It is a stable sort, meaning that it preserves the relative order of equal elements.
     Time Complexity: O(n log n) in all cases (worst, average, and best).
     Space Complexity: O(n) due to the temporary arrays used for merging.
     Stable: Yes
