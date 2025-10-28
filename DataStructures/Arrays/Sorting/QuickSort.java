@@ -11,7 +11,7 @@ public class QuickSort {
     Space Complexity: O(log n) due to recursion stack
     Stable: No
     In-Place: Yes
-    Not Adaptive
+    Not Adaptive 
     Not Online
     Not Recursive (but can be implemented recursively)
     Not Comparison-Based (it is comparison-based)
