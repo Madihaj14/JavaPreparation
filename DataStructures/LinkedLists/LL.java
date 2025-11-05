@@ -23,12 +23,8 @@ import java.util.*;
             h. size(): to get the size of the list
          */
 
-// Example of detailed code for linked lists
-
-
-
-
-class LL {
+//Example usage of LinkedList in Java
+public class LL {
    public static void main(String args[]) {
        LinkedList<String> list = new LinkedList<String>();
        list.add("is");
@@ -48,3 +44,121 @@ class LL {
        System.out.println(list);
    }
 }
+
+//Example code to demonstrate LinkedList as a Queue
+class LinkedListQueue { 
+    public static void main(String args[]) {
+        LinkedList<Integer> queue = new LinkedList<Integer>();
+
+        // Enqueue elements
+        queue.addLast(10);
+        queue.addLast(20);
+        queue.addLast(30);
+        System.out.println("Queue after enqueuing elements: " + queue);
+
+        // Dequeue elements
+        int removedElement = queue.removeFirst();
+        System.out.println("Dequeued element: " + removedElement);
+        System.out.println("Queue after dequeuing an element: " + queue);
+
+        // Peek at the front element
+        int frontElement = queue.getFirst();
+        System.out.println("Front element: " + frontElement);
+
+        // Check if the queue is empty
+        boolean isEmpty = queue.isEmpty();
+        System.out.println("Is the queue empty? " + isEmpty);
+
+        // Get the size of the queue
+        int size = queue.size();
+        System.out.println("Size of the queue: " + size);
+    }
+}
+
+//Example code to demonstrate LinkedList as a Stack
+class LinkedListStack {
+    public static void main(String args[]) {
+        LinkedList<Integer> stack = new LinkedList<Integer>();
+
+        // Push elements onto the stack
+        stack.addFirst(10);
+        stack.addFirst(20);
+        stack.addFirst(30);
+        System.out.println("Stack after pushing elements: " + stack);
+
+        // Pop elements from the stack
+        int removedElement = stack.removeFirst();
+        System.out.println("Popped element: " + removedElement);
+        System.out.println("Stack after popping an element: " + stack);
+
+        // Peek at the top element
+        int topElement = stack.getFirst();
+        System.out.println("Top element: " + topElement);
+
+        // Check if the stack is empty
+        boolean isEmpty = stack.isEmpty();
+        System.out.println("Is the stack empty? " + isEmpty);
+
+        // Get the size of the stack
+        int size = stack.size();
+        System.out.println("Size of the stack: " + size);
+    }
+}
+
+//Example code to insert, show and delete nodes in a singly linked list
+class SinglyLinkedList {
+    private Node head;
+    private static class Node {
+        int data;
+        Node next;
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+    public void insert(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+    }
+    public void display() {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " -> ");
+            current = current.next;
+        }
+        System.out.println("null");
+    }
+    public void delete(int key) {
+        Node current = head, prev = null;
+        if (current != null && current.data == key) {
+            head = current.next;
+            return;
+        }
+        while (current != null && current.data != key) {
+            prev = current;
+            current = current.next;
+        }
+        if (current == null) return;
+        prev.next = current.next;
+    }
+    public static void main(String args[]) {
+        SinglyLinkedList list = new SinglyLinkedList();
+        list.insert(10);
+        list.insert(20);
+        list.insert(30);
+        System.out.println("Linked List after insertion:");
+        list.display();
+        list.delete(20);
+        System.out.println("Linked List after deletion of 20:");
+        list.display();
+    }
+}
+
