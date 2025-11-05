@@ -23,7 +23,8 @@ import java.util.*;
             h. size(): to get the size of the list
          */
 
-//Example usage of LinkedList in Java
+//Example usage of LinkedList using Java Collections Framework
+
 public class LL {
    public static void main(String args[]) {
        LinkedList<String> list = new LinkedList<String>();
@@ -105,30 +106,89 @@ class LinkedListStack {
     }
 }
 
-//Example code to insert, show and delete nodes in a singly linked list
+//Example code to insert, insert at start, insert at a specific position, show and delete nodes in a singly linked list
+
 class SinglyLinkedList {
-    private Node head;
-    private static class Node {
+    Node head; // head of list
+
+    // Linked list Node
+    static class Node {
         int data;
         Node next;
-        Node(int data) {
-            this.data = data;
-            this.next = null;
+
+        // Constructor
+        Node(int d) {
+            data = d;
+            next = null;
         }
     }
+
+    // Method to insert a new node at the end
     public void insert(int data) {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
-        } else {
-            Node current = head;
-            while (current.next != null) {
-                current = current.next;
-            }
-            current.next = newNode;
+            return;
         }
+        Node last = head;
+        while (last.next != null) {
+            last = last.next;
+        }
+        last.next = newNode;
     }
-    public void display() {
+
+    // Method to insert a new node at the start
+    public void insertAtStart(int data) {
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    // Method to insert a new node at a specific position
+    public void insertAtPosition(int data, int position) {
+        Node newNode = new Node(data);
+        if (position == 0) {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+        Node current = head;
+        for (int i = 0; i < position - 1 && current != null; i++) {
+            current = current.next;
+        }
+        if (current == null) {
+            System.out.println("The previous node is null.");
+            return;
+        }
+        newNode.next = current.next;
+        current.next = newNode;
+    }
+
+    // Method to delete a node by key
+    public void deleteNode(int key) {
+        Node temp = head, prev = null;
+
+        // If head node itself holds the key to be deleted
+        if (temp != null && temp.data == key) {
+            head = temp.next; // Changed head
+            return;
+        }
+
+        // Search for the key to be deleted
+        while (temp != null && temp.data != key) {
+            prev = temp;
+            temp = temp.next;
+        }
+
+        // If key was not present in linked list
+        if (temp == null) return;
+
+        // Unlink the node from linked list
+        prev.next = temp.next;
+    }
+
+    // Method to print the linked list
+    public void show() {
         Node current = head;
         while (current != null) {
             System.out.print(current.data + " -> ");
@@ -136,29 +196,27 @@ class SinglyLinkedList {
         }
         System.out.println("null");
     }
-    public void delete(int key) {
-        Node current = head, prev = null;
-        if (current != null && current.data == key) {
-            head = current.next;
-            return;
-        }
-        while (current != null && current.data != key) {
-            prev = current;
-            current = current.next;
-        }
-        if (current == null) return;
-        prev.next = current.next;
-    }
-    public static void main(String args[]) {
+    // Main method to test the linked list operations
+    public static void main(String args[]) {   
         SinglyLinkedList list = new SinglyLinkedList();
+
         list.insert(10);
         list.insert(20);
         list.insert(30);
-        System.out.println("Linked List after insertion:");
-        list.display();
-        list.delete(20);
-        System.out.println("Linked List after deletion of 20:");
-        list.display();
+        System.out.println("Linked List after inserting elements:");
+        list.show();
+
+        list.insertAtStart(5);
+        System.out.println("Linked List after inserting 5 at start:");
+        list.show();
+
+        list.insertAtPosition(15, 2);
+        System.out.println("Linked List after inserting 15 at position 2:");
+        list.show();
+
+        list.deleteNode(20);
+        System.out.println("Linked List after deleting node with data 20:");
+        list.show();
     }
 }
 
