@@ -28,8 +28,6 @@ public class Notes {
         * - Circular queues help in optimizing space by reusing empty slots.
         * - Priority Queues are a special type of queue where elements are dequeued based on priority rather than order of insertion.
     */
-
-
     
 
 }
