@@ -1,5 +1,11 @@
 import java.time.LocalDate;
 import java.util.Scanner;
+
+/*Question 1: Write a java function that returns the last occurred palindromic date in ddmmyyyy.  
+    That is, if we run it today, it should return  22022022. (22 feb 2022). 
+    And if we run it in future, say in december 2031, it should return 13022031. (13 feb 2031)
+    */
+    
 public class Ques1 {
 
 
@@ -47,11 +53,7 @@ public class Ques1 {
         String currentYear = sc.nextLine();
         System.out.println(lastPalindromicDate(currentYear));
 
-    }
-
-    
-        
-        
+    }  
     
 
 }
