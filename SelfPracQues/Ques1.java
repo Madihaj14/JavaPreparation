@@ -5,11 +5,11 @@ import java.util.Scanner;
     That is, if we run it today, it should return  22022022. (22 feb 2022). 
     And if we run it in future, say in december 2031, it should return 13022031. (13 feb 2031)
     */
-    
+
 public class Ques1 {
 
 
-
+    //Reverse method to reverse the year
     public static String reverse(String year) {
 
         String reversed = "";
@@ -20,8 +20,10 @@ public class Ques1 {
 
     }
 
+    //method to find the last palindromic date
     public static String lastPalindromicDate(String currentYear) {
 
+        //converting the current year to integer
         int year = Integer.parseInt(currentYear);
         for ( int i = year; i>=1000; i--) {
 
@@ -31,6 +33,7 @@ public class Ques1 {
             day = revYear.substring(0,2);
             month = revYear.substring(2,4);
 
+            //converting day and month to integer
             int DD = Integer.parseInt(day);
             int MM = Integer.parseInt(month);
 
@@ -46,6 +49,7 @@ public class Ques1 {
         return "No palindromic date found";
     }
 
+    //main method with take year as input and pass it to lastPalindromicDate method
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
