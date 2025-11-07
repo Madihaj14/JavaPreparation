@@ -2,52 +2,56 @@ import java.time.LocalDate;
 import java.util.Scanner;
 public class Ques1 {
 
-    
-    public static void main(String[] args) {
 
-        System.out.println(lastPalindromicDate());
 
-    }
+    public static String reverse(String year) {
 
-    public static String reverseString(String str) {
         String reversed = "";
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reversed += str.charAt(i);
+        for (int i = year.length() - 1; i >= 0; i--) {
+            reversed += year.charAt(i);
         }
         return reversed;
+
     }
 
-    public static String lastPalindromicDate () {
-        // Implementation goes here
+    public static String lastPalindromicDate(String currentYear) {
 
-
-        //Taking input from user for the year
-
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter current year in YYYY format: ");
-        String currentYear = sc.nextLine();
-
-
-        //going backwards year by year from the one given
-        for (int i = Integer.parseInt(currentYear); i >= 1000; i--) {
+        int year = Integer.parseInt(currentYear);
+        for ( int i = year; i>=1000; i--) {
 
             String day;
             String month;
-            String year = currentYear;
-            
-            //Reversing the year to get day and month
-            reverseString(year);
-            day = reverseString(year).substring(0,2);
-            month = reverseString(year).substring(2,4);
+            String revYear = reverse(String.valueOf(i));
+            day = revYear.substring(0,2);
+            month = revYear.substring(2,4);
 
-            //validate the date
-            LocalDate.of(day, month, year);
+            int DD = Integer.parseInt(day);
+            int MM = Integer.parseInt(month);
 
-
-            return day + month + year;
+            //checking if the date formed is valid or not
+            if (DD < 1 || DD > 31 || MM < 1 || MM > 12) {
+                continue;
+            } else {
+                return day + "-" + month + "-" + i;
+            }
 
         }
-        
+
+        return "No palindromic date found";
     }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the current year:");
+        String currentYear = sc.nextLine();
+        System.out.println(lastPalindromicDate(currentYear));
+
+    }
+
+    
+        
+        
+    
 
 }
