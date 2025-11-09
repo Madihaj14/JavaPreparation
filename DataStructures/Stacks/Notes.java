@@ -3,10 +3,11 @@ public class Notes {
     //Stacks in Java Collections Framework (JCF)
     /*
     1. A stack is a linear data structure that follows the Last In First Out (LIFO) principle.
-    2. In a stack, the element that is added last is the one to be removed first.
-    3. Java provides a built-in Stack class as part of the java.util package.
-    4. The Stack class extends the Vector class and provides various methods to perform stack operations.
-    5. Some commonly used methods of the Stack class are:
+    2. It is also called ADT (Abstract Data Type) because it defines a set of operations without specifying the implementation details.
+    3. In a stack, the element that is added last is the one to be removed first.
+    4. Java provides a built-in Stack class as part of the java.util package.
+    5. The Stack class extends the Vector class and provides various methods to perform stack operations.
+    6. Some commonly used methods of the Stack class are:
         a. push(): to add an element to the top of the stack
         b. pop(): to remove and return the top element of the stack
         c. peek(): to view the top element of the stack without removing it
