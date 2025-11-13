@@ -3,7 +3,9 @@ package JavaPreparation.Prac2;
 import java.util.*;
 
 
-// WAP to take two numbers as input and print whether they are equal or not. If not, print which one is greater.
+/* Write a Program to take two numbers as input and print whether they are equal or not. 
+If not, print which one is greater. */
+
 public class Code {
 
     public static void main (String args[]) {
