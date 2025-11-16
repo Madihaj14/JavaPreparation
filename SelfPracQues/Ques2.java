@@ -6,8 +6,13 @@ public class Ques2 {
     Then I will iterate through the integer values array from the largest to the smallest value. For each value, I will determine how many times it fits into the input integer.
     I will append the corresponding roman letters to the result string that many times and subtract the total value from the input integer.
     I will continue this process until the input integer is reduced to zero.
-     */
+    */
 
+    public static String convertToRoman(int num ) {
+
+
+        
+    }
   
 
 
