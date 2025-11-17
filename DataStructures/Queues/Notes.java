@@ -4,6 +4,14 @@ public class Notes {
      * Queue:
      * A Queue is a linear data structure that follows the First In First Out (FIFO) principle.
      * Elements are added at the rear (enqueue) and removed from the front (dequeue).
+     * Here are some key points about Queues:
+     1. FIFO Structure: The first element added to the queue will be the first one to be removed.
+     2. Dynamic Size: Queues can grow and shrink in size as elements are added and removed.
+     3. No Random Access: Unlike arrays or lists, you cannot access elements in a queue randomly; you can only access the front element.
+     4. Use Cases: Queues are commonly used in scenarios like task scheduling, handling requests in web servers, and breadth-first search (BFS) in graph algorithms.
+     5. Variants: There are several variants of queues, including circular queues, priority queues, and double-ended queues (deques).
+     6. Implementation: Queues can be implemented using arrays, linked lists, or other data structures.
+     7. Time Complexity: The time complexity for enqueue and dequeue operations is O(1) in a well-implemented queue.
      * 
      * Common Operations:
      * 1. enqueue(element): Adds an element to the rear of the queue.
