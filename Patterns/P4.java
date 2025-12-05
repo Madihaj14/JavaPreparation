@@ -1,4 +1,10 @@
 package JavaPreparation.Patterns;
+/*Problem: Print the following pattern for n=4
+   ****
+   *  *
+   *  *
+   ****
+*/
 
 public class P4 {
     public static void main(String args []) {

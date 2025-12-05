@@ -11,7 +11,7 @@ public class P1 {
         public static void main(String[] args) {
             
         /* for (int counter = 0; counter<11; counter++){
-                        System.out.println(counter); 
+            System.out.println(counter); 
         } */
 
             int n = 4;
@@ -31,6 +31,4 @@ public class P1 {
 
         }
     }
-}    
-
-   
+}
