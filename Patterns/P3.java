@@ -1,5 +1,3 @@
-package JavaPreparation.Patterns;
-
 /*Problem: Print the following pattern for n=4
 *
 **
@@ -17,7 +15,7 @@ public class P3 {
 
             //inner loop for columns and print stars
             for (int j=1; j<=i; j++) {
-                
+
                 System.out.print("*");
             }
 

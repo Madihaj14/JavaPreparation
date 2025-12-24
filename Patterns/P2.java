@@ -1,5 +1,3 @@
-package JavaPreparation.Patterns;
-
 /*Problem: Print the following pattern for n=4 and m=5
 *****
 *   *
