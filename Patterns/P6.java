@@ -5,6 +5,13 @@ public class P6 {
 
         int n = 5;
         //Inverted half pyramid with numbers in decending order
+        /*
+        *****
+        ****
+        ***
+        **
+        *
+        */
         //outer loop
         for (int i=1; i<=n; i++) {
         //inner loop
